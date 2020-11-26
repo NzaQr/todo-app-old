@@ -15,7 +15,6 @@ class App extends React.Component {
     this.setState((prevState) => {
       const updatedTodos = prevState.todos.map((todo) => {
         if (todo.id === id) {
-          //if the current todo that we are looking at has an id thats equal to the id we recieved from the parameter, then we know this is the todo item that we want to flip
           return {
             ...todo,
             completed: !todo.completed,
